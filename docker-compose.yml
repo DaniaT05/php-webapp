@@ -11,7 +11,7 @@ services:
       - ./:/docker-entrypoint-initdb.d
       - mysql_data:/var/lib/mysql
   web:
-    image: php:mysqli
+    image: qasimmalik/php:mysqli
     container_name: bcs7_web
     depends_on:
       - db
